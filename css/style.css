@@ -40,3 +40,98 @@ backdrop-filter: blur(3px);
 .top:hover{
      background:rgb(24, 24, 24);
 }
+
+
+
+
+
+/*---------------------------*/
+/* Footer base */
+.footer-dark {
+    background: linear-gradient(180deg, #323232 0%, #000000 100%);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Títulos */
+
+
+.footer-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Texto */
+.footer-desc {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.enlaceyo{
+      color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.enlaceyo:hover{
+      color: #fff;
+}
+.enlace:visited{
+     color: #ccc;
+      text-decoration: none;
+}
+/* Links */
+.footer-links li {
+    margin-bottom: 0.5rem;
+    
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Redes sociales */
+.footer-social a {
+    color: #ccc;
+    font-size: 1.4rem;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+/* Copyright */
+.footer-copy {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.texto-en-la-mira {
+    background: rgba(0, 0, 0, 0.6);
+    border-left: 4px solid #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+}
+.footer-dark .row>div {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding-right: 1.5rem;
+}
+
+.footer-dark .row>div:last-child {
+    border-right: none;
+}
+
+
+
+a{
+    text-decoration: none;
+}
