@@ -1,246 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
     box-sizing: border-box;
-    color: white;
-    font-family: 'Poppins', sans-serif;
 }
-.fondo-header {
-    background-image: url('../img/header.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 150px;
-    /* altura fija, no se deforma */
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    /* centramos contenido */
-    justify-content: center;
-    align-items: center;
-    color: white;
-    box-shadow: 0px 4px 15px #000000;
-    overflow: hidden;
-    /* evita que el texto animado estire el contenedor */
-}
-
-/* SOLO el h1 se anima */
-.fondo-header h1 {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: aparecer 1.2s ease-out forwards;
-
-}@keyframes aparecer {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fondo {
+.fondo{
     background-color: rgb(18, 70, 87);
-}
-
-.enlace {
-    text-decoration: none;
     color: white;
-    border: white 1px solid;
-    padding: 10px 40px;
-    display: inline-block;
-    margin: 10px 20px;
-    transition: background-color 0.3s, color 0.3s;
-     position: relative;
-    overflow: hidden;
-    z-index: 1;
 }
 
-.enlace:hover {
+header {
+    background: linear-gradient(135deg, #1f1c2c, #89e5e5);
+}
+
+
+.overlay{
+background-color: #00000018;
+backdrop-filter: blur(3px);
+}
+.btn-2 {
+    background-color: transparent;
+    border: 2px solid white; /* grosor + tipo + color */
+    color: white;
+    padding: 8px 20px; /* sin coma, solo espacio */
+    border-radius: 30px; /* opcional, para bordes redondeados */
+    cursor: pointer; /* opcional, para indicar que es clicable */
+    margin-top: 20px;
+}
+.btn-2:hover{
     background-color: white;
-    color: black;
+    color: rgb(61, 61, 61);
 }
 
-
-/* Animación sutil al botón */
-
-
-.enlace::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    transform: skewX(-20deg);
-    transition: left 0.5s ease;
-    z-index: -1;
+.hero-video{
+    height: 100vh;
 }
-
-.enlace:hover::before {
-    left: 100%;
-}
-
-/* Suave cambio de tamaño al hover */
-.enlace:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.05);
-}
-
-
-
-
-
-/* Título principal */
-h1 {
-  font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-}
-h2 {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 700;
-    font-size: 3rem; 
-}
-
-h4 {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 700;
-}
-
-/* Texto descriptivo */
-p {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
-    line-height: 1.6;
-}
-
-img {
-    border-radius: 6px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.03);
-    filter: brightness(1.05);
-}
-
-
-
-/* Footer base */
-.footer-dark {
-    background: linear-gradient(180deg, #323232 0%, #000000 100%);
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-/* Títulos */
-.footer-title {
- 
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-}
-
-.footer-subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-/* Texto */
-.footer-desc {
-    color: #ccc;
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-.enlaceyo{
-      color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-.enlaceyo:hover{
-      color: #fff;
-}
-.enlace:visited{
-     color: #ccc;
-      text-decoration: none;
-}
-/* Links */
-.footer-links li {
-    margin-bottom: 0.5rem;
-    
-}
-
-.footer-links a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #fff;
-}
-
-/* Redes sociales */
-.footer-social a {
-    color: #ccc;
-    font-size: 1.4rem;
-    margin-right: 10px;
-    transition: color 0.3s ease;
-}
-
-.footer-social a:hover {
-    color: #fff;
-}
-
-/* Copyright */
-.footer-copy {
-    color: #666;
-    font-size: 0.85rem;
-}
-
-.texto-en-la-mira {
-    background: rgba(0, 0, 0, 0.6);
-    border-left: 4px solid #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    backdrop-filter: blur(4px);
-}
-.footer-dark .row>div {
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-    padding-right: 1.5rem;
-}
-
-.footer-dark .row>div:last-child {
-    border-right: none;
-}
-
-
-/* Animación para los contenedores de proyectos */
-.col-12 {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 0.6s ease forwards;
-}
-
-/* Definimos la animación */
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+@media (max-width: 768px){
+    .hero-video{
+        height: 60vh;
     }
 }
-.decoration{
-       color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-.decoration:hover {
-color: white;
-}
+/*responive texto container saber mas*/
