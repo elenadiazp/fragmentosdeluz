@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>EdpFotografía</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+</head>
+
+<body class="fondo">
+
+    <main>
+        <section class="hero-video position-relative w-100" style=" overflow: hidden;">
+
+            <!-- 🎥 Video -->
+            <video class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover" src="img/217392_small.mp4"
+                autoplay muted loop playsinline>
+            </video>
+
+            <!-- 🌑 Overlay opcional -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.35);">
+            </div>
+
+            <!-- 📝 Contenido encima del video -->
+            <div class="position-relative z-1 text-center text-light d-flex flex-column 
+                justify-content-center align-items-center h-100">
+                <h1 class="fw-bold display-4" style="font-family: 'Poppins', sans-serif;">
+                    Fragmentos de Luz
+                </h1>
+                <p class="lead">Iluminando ideas, creando experiencias</p>
+
+                <div class="scroll-down text-center  mt-4">
+                    <a href="#proyecto">
+                        <i class="bi bi-chevron-double-down fs-1 text-light opacity-75 scroll-icon"></i></a>
+                </div>
+
+                <style>
+                    .scroll-icon {
+                        display: inline-block;
+                        /* NECESARIO para animación */
+                        animation: bounce 1.5s infinite ease-in-out;
+                    }
+
+                    @keyframes bounce {
+
+                        0%,
+                        100% {
+                            transform: translateY(0);
+                            opacity: 0.7;
+                        }
+
+                        50% {
+                            transform: translateY(10px);
+                            opacity: 1;
+                        }
+                    }
+                </style>
+
+
+            </div>
+
+        </section>
+        <section id="proyecto" class="container my-5 py-5">
+
+            <div class="row align-items-center justify-content-center g-5">
+
+                <!-- 📘 Imagen / Portada -->
+                <div class="col-12 col-md-6 text-center">
+                    <img src="img/cartel.jpg" alt="Portada del proyecto" class="img-fluid w-50 rounded-4 shadow-lg">
+                </div>
+
+                <!-- 📝 Texto del proyecto -->
+                <div class="col-12 col-md-6">
+                    <h2 class="fw-bold mb-3" style="font-family: 'Poppins', sans-serif;">
+                        Fragmentos de luz
+                    </h2>
+
+                    <p class="lead mb-4" style="font-size: 1.15rem;">
+                        "Fragmentos de luz" es un proyecto fotográfico que he querido
+                        desarrollar con la intención de mostrar distintos tipos de técnicas y temáticas, lo que permite
+                        explorar diversas formas de expresión visual dentro de un mismo conjunto. Cada fotografía posee
+                        su propia historia, así como un enfoque particular, tanto en estilo como en ejecución.
+                    </p>
+
+                    <a href="#" class="btn btn-dark rounded-pill px-4 py-2 shadow-sm">
+                        Ver Proyecto →
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container px-3">
+    <div class="row justify-content-center shadow rounded-5 overflow-hidden">
+        <div class="col-12 position-relative text-center my-4 p-0">
+            <picture class="d-block w-100">
+                <source media="(max-width: 768px)" srcset="img/cristal.jpg">
+                <source media="(min-width: 769px)" srcset="img/cristal-lg.jpg">
+                <img src="img/cristal.jpg" alt="cristal" class="img-fluid w-100 rounded-5">
+            </picture>
+
+            <div class="overlay position-absolute top-0 start-0 h-100 w-100 rounded-5"></div>
+
+           <div class="position-absolute top-50 start-50 translate-middle text-white text-center px-3" style="max-width: 90%;">
+    <h1 class="fw-bold display-6">¿Quieres saber quien soy?</h1>
+    <p class="lead">Descubre quién soy y cómo puedo ayudarte a dar vida a tus proyectos.</p>
+    <button type="button" class="btn-2 shadow">Saber más →</button>
+</div>
+
+        </div>
+    </div>
+</section>
+
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
