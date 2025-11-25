@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+html, body {
+  overflow-x: hidden;
+}
+
 .fondo{
     background-color: rgb(18, 70, 87);
     color: white;
@@ -28,11 +32,12 @@ backdrop-filter: blur(3px);
 .hero-video{
     height: 100vh;
 }
+/*
 @media (max-width: 768px){
     .hero-video{
         height: 60vh;
     }
-}
+}*/
 .top{
     background:rgb(46, 46, 46);
     padding: 10px;
