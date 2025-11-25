@@ -15,7 +15,7 @@
     <link rel="icon" href="img/logo.jpg" type="image/x-icon">
 </head>
 
-<body class="fondo">
+<body id="top" class="fondo">
 
     <main>
         <section class="hero-video position-relative w-100" style=" overflow: hidden;">
@@ -39,7 +39,7 @@
 
                 <div class="scroll-down text-center  mt-4">
                     <a href="#proyecto">
-                        <i class="bi bi-chevron-double-down fs-1 text-light opacity-75 scroll-icon"></i></a>
+                        <i class="bi bi-chevron-double-down fs-1 text-light  scroll-icon"></i></a>
                 </div>
 
                 <style>
@@ -98,31 +98,35 @@
             </div>
         </section>
 
-        <section class="container px-3">
-    <div class="row justify-content-center shadow rounded-5 overflow-hidden">
-        <div class="col-12 position-relative text-center my-4 p-0">
-            <picture class="d-block w-100">
-                <source media="(max-width: 768px)" srcset="img/cristal.jpg">
-                <source media="(min-width: 769px)" srcset="img/cristal-lg.jpg">
-                <img src="img/cristal.jpg" alt="cristal" class="img-fluid w-100 rounded-5">
-            </picture>
+        <section class="container ">
+            <div class="row justify-content-center shadow rounded-5 overflow-hidden">
+                <div class="col-12 position-relative text-center  p-0">
+                    <picture class="d-block w-100">
+                        <source media="(max-width: 768px)" srcset="img/cristal.jpg">
+                        <source media="(min-width: 769px)" srcset="img/cristal-lg.jpg">
+                        <img src="img/cristal.jpg" alt="cristal" class="img-fluid w-100 rounded-5">
+                    </picture>
 
-            <div class="overlay position-absolute top-0 start-0 h-100 w-100 rounded-5"></div>
+                    <div class="overlay position-absolute top-0 start-0 h-100 w-100 rounded-5"></div>
 
-           <div class="position-absolute top-50 start-50 translate-middle text-white text-center px-3" style="max-width: 90%;">
-    <h1 class="fw-bold display-6">¿Quieres saber quien soy?</h1>
-    <p class="lead">Descubre quién soy y cómo puedo ayudarte a dar vida a tus proyectos.</p>
-    <button type="button" class="btn-2 shadow">Saber más →</button>
-</div>
+                    <div class="position-absolute top-50 start-50 translate-middle text-white text-center px-3"
+                        style="max-width: 90%;">
+                        <h1 class="fw-bold display-6">¿Quieres saber quien soy?</h1>
+                        <p class="lead">Descubre quién soy y cómo puedo ayudarte a dar vida a tus proyectos.</p>
+                        <button type="button" class="btn-2 shadow">Saber más →</button>
+                    </div>
 
-        </div>
-    </div>
-</section>
+                </div>
+            </div>
+        </section>
 
 
     </main>
-    <footer>
-        <!-- place footer here -->
+    <footer class="position-relative mt-5 -p-5">
+        <div class="position-absolute bottom-0 end-0 me-3 mb-3"> <a href="#top" class="top text-center rounded-3"> <i class="bi bi-chevron-up  text-light "></i></a></div>
+       
+   
+
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

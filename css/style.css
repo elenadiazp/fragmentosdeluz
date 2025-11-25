@@ -6,10 +6,6 @@
     color: white;
 }
 
-header {
-    background: linear-gradient(135deg, #1f1c2c, #89e5e5);
-}
-
 
 .overlay{
 background-color: #00000018;
@@ -37,4 +33,10 @@ backdrop-filter: blur(3px);
         height: 60vh;
     }
 }
-/*responive texto container saber mas*/
+.top{
+    background:rgb(46, 46, 46);
+    padding: 10px;
+}
+.top:hover{
+     background:rgb(24, 24, 24);
+}
