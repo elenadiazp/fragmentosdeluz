@@ -237,3 +237,12 @@ a{
 .text-justify {
     text-align: justify;
 }
+
+.bg-sobremi {
+    background: linear-gradient(
+        to bottom,
+        #141414 0%,
+        #135152 20%,
+        #124657 100%
+    );
+}
