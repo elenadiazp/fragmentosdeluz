@@ -74,7 +74,7 @@
 
                 <!-- 📘 Imagen / Portada -->
                 <div class="col-12 col-md-6 text-center">
-                    <img src="img/cartel.jpg" alt="Portada del proyecto" class="img-fluid w-50 rounded-4 shadow-lg">
+                    <img src="img/cartel.jpg" alt="Portada del proyecto" class="img-fluid cartel rounded-4 shadow-lg">
                 </div>
 
                 <!-- 📝 Texto del proyecto -->
@@ -98,27 +98,30 @@
             </div>
         </section>
 
-        <section class="container ">
-            <div class="row justify-content-center shadow rounded-5 overflow-hidden">
-                <div class="col-12 position-relative text-center  p-0">
-                    <picture class="d-block w-100">
-                        <source media="(max-width: 768px)" srcset="img/cristal.jpg">
-                        <source media="(min-width: 769px)" srcset="img/cristal-lg.jpg">
-                        <img src="img/cristal.jpg" alt="cristal" class="img-fluid w-100 rounded-5">
-                    </picture>
+       <section class="container">
+    <div class="row justify-content-center shadow rounded-5 overflow-hidden">
+        <div class="col-12 position-relative text-center p-0">
 
-                    <div class="overlay position-absolute top-0 start-0 h-100 w-100 rounded-5"></div>
+            <picture class="d-block w-100">
+                <source media="(max-width: 768px)" srcset="img/cristal.jpg">
+                <source media="(min-width: 769px)" srcset="img/cristal-lg.jpg">
+                <img src="img/cristal.jpg" alt="cristal" class="img-fluid w-100 rounded-5">
+            </picture>
 
-                    <div class="position-absolute top-50 start-50 translate-middle text-white text-center px-3"
-                        style="max-width: 90%;">
-                        <h1 class="fw-bold display-6">¿Quieres saber quien soy?</h1>
-                        <p class="lead">Descubre quién soy y cómo puedo ayudarte a dar vida a tus proyectos.</p>
-                        <a href="sobremi.html" class="btn-2 shadow">Saber más →</a>
-                    </div>
+            <!-- Overlay -->
+            <div class="overlay position-absolute top-0 start-0 h-100 w-100 rounded-5"></div>
 
-                </div>
+            <!-- Texto centrado responsivo -->
+            <div class="hero-text position-absolute top-50 start-50 translate-middle text-white text-center px-3">
+                <h1 class="fw-bold">¿Quieres saber quien soy?</h1>
+                <p class="lead">Descubre quién soy y cómo puedo ayudarte a dar vida a tus proyectos.</p>
+                <a href="sobremi.html" class="btn-2 shadow">Saber más →</a>
             </div>
-        </section>
+
+        </div>
+    </div>
+</section>
+
 
 
     </main>
