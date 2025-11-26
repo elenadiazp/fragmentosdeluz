@@ -228,6 +228,10 @@ a{
 
 
 
+.dropdown-menu .dropdown-item:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
 
 
 .text-justify {
