@@ -231,3 +231,11 @@ a{
     opacity: 1;
     transform: scale(1);
 }
+
+
+
+
+
+.text-justify {
+    text-align: justify;
+}
