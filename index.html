@@ -98,35 +98,37 @@
             </div>
         </section>
 
-       <section class="container">
-    <div class="row justify-content-center shadow rounded-5 overflow-hidden">
-        <div class="col-12 position-relative text-center p-0">
+        <section class="container">
+            <div class="row justify-content-center shadow rounded-5 overflow-hidden">
+                <div class="col-12 position-relative text-center p-0">
 
-            <picture class="d-block w-100">
-                <source media="(max-width: 768px)" srcset="img/cristal.jpg">
-                <source media="(min-width: 769px)" srcset="img/cristal-lg.jpg">
-                <img src="img/cristal.jpg" alt="cristal" class="img-fluid w-100 rounded-5">
-            </picture>
+                    <picture class="d-block w-100">
+                        <source media="(max-width: 768px)" srcset="img/cristal.jpg">
+                        <source media="(min-width: 769px)" srcset="img/cristal-lg.jpg">
+                        <img src="img/cristal.jpg" alt="cristal" class="img-fluid w-100 rounded-5">
+                    </picture>
 
-            <!-- Overlay -->
-            <div class="overlay position-absolute top-0 start-0 h-100 w-100 rounded-5"></div>
+                    <!-- Overlay -->
+                    <div class="overlay position-absolute top-0 start-0 h-100 w-100 rounded-5"></div>
 
-            <!-- Texto centrado responsivo -->
-            <div class="hero-text position-absolute top-50 start-50 translate-middle text-white text-center px-3">
-                <h1 class="fw-bold">¿Quieres saber quien soy?</h1>
-                <p class="lead">Descubre quién soy y cómo puedo ayudarte a dar vida a tus proyectos.</p>
-                <a href="sobremi.html" class="btn-2 shadow">Saber más →</a>
+                    <!-- Texto centrado responsivo -->
+                    <div
+                        class="hero-text position-absolute top-50 start-50 translate-middle text-white text-center px-3">
+                        <h1 class="fw-bold">¿Quieres saber quien soy?</h1>
+                        <p class="lead">Descubre quién soy y cómo puedo ayudarte a dar vida a tus proyectos.</p>
+                        <a href="sobremi.html" class="btn-2  shadow">Saber más →</a>
+                    </div>
+
+                </div>
             </div>
-
-        </div>
-    </div>
-</section>
+        </section>
 
 
 
     </main>
     <footer class=" mt-5 p-5 footer-dark text-light">
-        <div class="position-fixed bottom-0 end-0 me-3 mb-3 "> <a href="#top" class="top text-center rounded-3"> <i class="bi bi-chevron-up  text-light "></i></a></div>
+        <div class="position-fixed bottom-0 end-0 me-3 mb-3 "> <a href="#top" class="top text-center rounded-3"> <i
+                    class="bi bi-chevron-up  text-light "></i></a></div>
         <div class="container">
             <div class="row text-center text-md-start"> <!-- Columna 1: Logo / Nombre -->
                 <div class="col-md-4 mb-4">
@@ -184,7 +186,7 @@
                 hecha por <a class="enlaceyo" href="https://www.instagram.com/elena_diaz08_/">Elena Díaz Pérez</a>
             </div>
         </div>
-   
+
 
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
@@ -195,6 +197,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const img = document.querySelector(".cartel");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        img.classList.add("show");
+                    }
+                });
+            });
+
+            observer.observe(img);
+        });
+    </script>
+
 </body>
 
 </html>

@@ -22,7 +22,7 @@ backdrop-filter: blur(3px);
     padding: 8px 20px; /* sin coma, solo espacio */
     border-radius: 30px; /* opcional, para bordes redondeados */
     cursor: pointer; /* opcional, para indicar que es clicable */
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .btn-2:hover{
     background-color: white;
@@ -218,8 +218,16 @@ backdrop-filter: blur(3px);
 a{
     text-decoration: none;
 }
-/*cartel*/
-.cartel{
-    width: 70%;
+/*cartel (tiene un js animacion)*/
 
+.cartel {
+      width: 70%;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.cartel.show {
+    opacity: 1;
+    transform: scale(1);
 }
