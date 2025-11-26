@@ -21,9 +21,17 @@
         <section class="hero-video position-relative w-100" style=" overflow: hidden;">
 
             <!-- 🎥 Video -->
-            <video class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover" src="img/217392_small.mp4"
-                autoplay muted loop playsinline>
+            <!-- 🎥 Video responsivo con 2 calidades -->
+            <video class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover" autoplay muted loop playsinline>
+
+                <!-- Versión móvil (baja calidad) -->
+                <source src="img/ondabrillo.mp4" type="video/mp4" media="(max-width: 768px)">
+
+                <!-- Versión PC (alta calidad) -->
+                <source src="img/ondabrillo-pc.mp4" type="video/mp4" media="(min-width: 769px)">
+
             </video>
+
 
             <!-- 🌑 Overlay opcional -->
             <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.35);">
