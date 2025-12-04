@@ -254,12 +254,7 @@ a {
     text-align: justify;
 }
 
-.bg-sobremi {
-    background: linear-gradient(to bottom,
-            #141414 0%,
-            #135152 20%,
-            #124657 100%);
-}
+
 
 .foto1 {
     width: 100%;
@@ -344,3 +339,6 @@ a {
   box-shadow: 0 10px 25px rgba(0,0,0,0.35);
 }
 
+.opaco{
+    background-color: #ffffff1c;
+}
