@@ -331,3 +331,16 @@ a {
     font-size: 1.15rem;
     opacity: 0.9;
 }
+
+/* Animación suave */
+.img-hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+/* Efecto hover */
+.img-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
