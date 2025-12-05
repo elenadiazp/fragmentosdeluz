@@ -343,3 +343,11 @@ a {
     background-color: #ffffff1c;
     
 }
+/* Tamaño base (pantallas grandes) */
+.foto-redonda {
+ 
+ 
+  object-fit: cover;
+  border-radius: 50%;
+
+}
