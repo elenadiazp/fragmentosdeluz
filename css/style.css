@@ -351,3 +351,14 @@ a {
   border-radius: 50%;
 
 }
+.mar{
+    width: 850px;
+}
+@media (max-width: 600px) {
+    .mar {
+        width: 600px;
+    }}
+@media (max-width: 360px) {
+    .mar {
+        width: 100%;
+    }}
