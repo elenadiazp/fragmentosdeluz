@@ -329,36 +329,43 @@ a {
 
 /* Animación suave */
 .img-hover {
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
 }
 
 /* Efecto hover */
 .img-hover:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
-.opaco{
+.opaco {
     background-color: #ffffff1c;
-    
+
 }
+
 /* Tamaño base (pantallas grandes) */
 .foto-redonda {
- 
- 
-  object-fit: cover;
-  border-radius: 50%;
+
+
+    object-fit: cover;
+    border-radius: 50%;
 
 }
-.mar{
+
+.mar {
     width: 850px;
 }
+
 @media (max-width: 600px) {
     .mar {
         width: 600px;
-    }}
+    }
+}
+
 @media (max-width: 360px) {
     .mar {
         width: 100%;
-    }}
+    }
+}
+
