@@ -369,3 +369,18 @@ a {
     }
 }
 
+.angel {
+    width: 850px;
+}
+
+@media (max-width: 600px) {
+    .angel {
+        width: 600px;
+    }
+}
+
+@media (max-width: 360px) {
+    .angel {
+        width: 100%;
+    }
+}
