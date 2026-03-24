@@ -384,3 +384,18 @@ a {
         width: 100%;
     }
 }
+
+.susurro{
+    background-color: #00000063;
+}
+.btn4{
+       background-color: rgb(18, 70, 87);
+    color: white;
+    cursor: pointer;
+
+}
+.btn4:hover{
+       background-color: rgb(47, 120, 144);
+    cursor: pointer;
+    
+}
