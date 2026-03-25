@@ -29,49 +29,8 @@ connect-src 'self';
 </head>
 
 <body class="fondo">
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-black py-2">
-            <div class="container">
-
-                <!-- LOGO IZQUIERDA -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.jpg" class="img-fluid" width="80px" alt="logo">
-                </a>
-
-                <!-- BOTÓN HAMBURGUESA -->
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- MENÚ DERECHA -->
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0"> <!-- ← AQUÍ EL CAMBIO -->
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html" aria-current="page">Inicio</a>
-                        </li>
-
-
-                        <li class="nav-item dropdown d-flex align-items-center">
-                            <!-- Enlace principal -->
-                            <a class="nav-link" href="fragmentos.html">Fragmentos de luz</a>
-                        </li>
-
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="sobremi.html">Sobre mi</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
-
-
-    </header>
+   
+    <div id="header"></div>
     <main class="container">
         <section class="py-5 text-center">
             <h1 class="fw-bold display-4" style="letter-spacing: 1px;">
@@ -136,67 +95,8 @@ connect-src 'self';
 
     </main>
 
-    <footer class=" mt-5 p-5 footer-dark text-light">
-        <div class="position-fixed bottom-0 end-0 me-3 mb-3 "> <a href="#top" class="top text-center rounded-3"> <i
-                    class="bi bi-chevron-up  text-light "></i></a></div>
-        <div class="container">
-            <div class="row text-center text-md-start"> <!-- Columna 1: Logo / Nombre -->
-                <div class="col-md-4 mb-4">
-                    <h3 class="footer-subtitle">EdpFotografía</h3>
-                    <p class="footer-desc">Capturando instantes dignos de recordar. Sesiones creativas para todo tipo de
-                        proyectos - Eva Díaz Pérez.</p>
-                    <p class="footer-desc">Agradecimientos a los participantes dentro del proyecto.<br>- Elena Díaz
-                        Pérez <br>- Hernan Sánchez García
-                        <br>- O'hana Mailen Ripoll Pero <br>- Mario Diezma Moreno <br>- Henar Manzano Rodriguez
-                    </p>
-
-                    </p>
-                </div> <!-- Columna 2 : Navegación -->
-                <div class="col-md-4 mb-4 ">
-                    <h5 class="footer-subtitle">Enlaces</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="fragmentos.html">Fragmentos de luz</a></li>
-                        <li><a href="sobremi.html">Sobre mi</a></li>
-                    </ul>
-                </div> <!-- Columna 3: Redes -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="footer-subtitle text-center text-md-start">Contacto</h5>
-
-                    <!-- Redes sociales -->
-                    <div class="footer-social d-flex flex-column gap-2 align-items-center align-items-md-start mb-3">
-                        <!-- Instagram -->
-                        <a class="decoration d-flex align-items-center gap-2 text-truncate"
-                            href="https://www.instagram.com/edpfotografia_22_/" target="_blank"
-                            style="max-width: 100%;">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="footer-links fs-6">edpfotografia_22_</span>
-                        </a>
-
-                        <!-- Gmail -->
-                        <a class="decoration  d-flex align-items-center gap-2 text-truncate"
-                            href="https://mail.google.com/mail/?view=cm&fs=1&to=edpfotografia.22@gmail.com"
-                            target="_blank" style="max-width: 100%;">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <span class="footer-links fs-6">edpfotografia.22@gmail.com</span>
-                        </a>
-                    </div>
-
-                    <!-- Logo debajo -->
-                    <div class="text-center">
-                        <img src="img/logo.jpg" alt="logo" class="img-fluid mt-3 rounded-circle shadow"
-                            style="max-width: 150px;">
-                    </div>
-                </div>
-
-            </div>
-            <div class="text-center mt-4 footer-copy"> © 2025 EdpFotografía — Todos los derechos reservados.<br> Web
-                hecha por <a class="enlaceyo" href="https://www.instagram.com/elena_diaz08_/">Elena Díaz Pérez</a>
-            </div>
-        </div>
-
-
-    </footer>
+ <div id="footer"></div>
+    <script src="js/include.js"></script>
 
     <style>
         #mensajeProtegido {
