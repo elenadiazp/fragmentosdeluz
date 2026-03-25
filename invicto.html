@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="Content-Security-Policy" content="
 default-src 'self';
-connect-src 'self' https://cdn.jsdelivr.net;
 img-src 'self' data: https:;
 script-src 'self' https://cdn.jsdelivr.net;
 style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
 font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net;
+connect-src 'self';
 ">
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -199,19 +199,8 @@ font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net;
         }
     </style>
 
-    <div id="mensajeProtegido">Esta imagen está protegida.</div>
-
-    <script>
-        const mensaje = document.getElementById('mensajeProtegido');
-
-        document.querySelectorAll('img').forEach(img => {
-            img.addEventListener('contextmenu', function (e) {
-                e.preventDefault();
-                mensaje.style.display = 'block';
-                setTimeout(() => mensaje.style.display = 'none', 2000); // desaparece en 2s
-            });
-        });
-    </script>
+    <div id="mensajeProtegido">Imagen protegida</div>
+    <script src="js/script.js"></script>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
