@@ -23,6 +23,40 @@ connect-src 'self';
 </head>
 
 <body id="top" class="fondo">
+    <div id="overlay" class="position-fixed top-0 start-0 w-100 h-100" style="z-index:9999;">
+
+        <!-- 🎥 VIDEO DE FONDO -->
+        <section class="hero-video position-relative w-100 h-100" style="overflow: hidden;">
+
+            <video class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover" autoplay muted loop playsinline>
+
+                <source src="img/ondabrillo.mp4" type="video/mp4" media="(max-width: 768px)">
+                <source src="img/ondabrillo-pc.mp4" type="video/mp4" media="(min-width: 769px)">
+
+            </video>
+
+            <!-- 🌑 CAPA OSCURA -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5);"></div>
+
+            <!-- ✨ CONTENIDO ENCIMA -->
+            <div
+                class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white px-3">
+
+                <h1 class="display-3 mb-3">Fragmentos de Luz</h1>
+                <p class="lead">Exposición fotográfica</p>
+                 <p class="lead">Sala de Exposiciones del Ayuntamiento de Los Yébenes (Sala superior de la Casa de la Cultura)</p>
+
+                <h2 class="mt-4">Próximamente</h2>
+
+                <div id="countdown" style="font-size:50px; color:#fff; text-shadow: 0 0 10px black;"></div>
+
+                <p class="mt-4">Se abrirá automáticamente</p>
+
+            </div>
+
+        </section>
+    </div>
+
 
     <main>
         <section class="hero-video position-relative w-100" style=" overflow: hidden;">
@@ -167,7 +201,7 @@ connect-src 'self';
         </section>
 
     </main>
-    
+
     <div id="footer"></div>
     <script src="js/include.js"></script>
 
@@ -186,6 +220,7 @@ connect-src 'self';
     </style>
     <div id="mensajeProtegido">Imagen protegida</div>
     <script src="js/script.js"></script>
+     <script src="js/countdown.js"></script>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -197,7 +232,7 @@ connect-src 'self';
         crossorigin="anonymous"></script>
 
 
-
 </body>
+
 
 </html>

@@ -399,3 +399,6 @@ a {
     cursor: pointer;
     
 }
+#overlay {
+  transition: opacity 1s ease;
+}
