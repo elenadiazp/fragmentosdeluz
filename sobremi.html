@@ -6,11 +6,11 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="Content-Security-Policy" content="
+    <meta http-equiv="Content-Security-Policy" content="
 default-src 'self';
 img-src 'self' data: https:;
-script-src 'self' https://cdn.jsdelivr.net;
-style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+script-src 'self' https://cdn.jsdelivr.net https://unpkg.com;
+style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com https://unpkg.com;
 font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net;
 connect-src 'self';
 ">
@@ -23,7 +23,7 @@ connect-src 'self';
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 
-
+ <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 
 </head>
@@ -40,15 +40,16 @@ connect-src 'self';
       <div class="container">
 
         <!-- Título -->
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="fade-up">
           <h2 class="text-white mb-2 display-6 fw-semibold">Sobre mí</h2>
 
           <!-- Línea decorativa -->
-          <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center"  data-aos="zoom-in" data-aos-delay="200">
             <div style="width:90px; height:4px; background:white; border-radius:20px;"></div>
           </div>
 
-          <p class="text-light mt-3 fst-italic opacity-75">
+          <p class="text-light mt-3 fst-italic opacity-75" data-aos="fade-up"
+             data-aos-delay="300">
             Detrás de cada imagen hay una historia que quiero contar
           </p>
         </div>
@@ -57,13 +58,13 @@ connect-src 'self';
         <div class="row align-items-center g-5">
 
           <!-- FOTO -->
-          <div class="col-md-5 text-center">
+          <div class="col-md-5 text-center"  data-aos="fade-right">
             <img src="img/sobremmi1.jpg" class="img-fluid shadow-lg photo-frame foto-redonda img-hover">
           </div>
 
 
           <!-- TEXTO -->
-          <div class="col-md-7">
+          <div class="col-md-7" data-aos="fade-left" data-aos-delay="200">
             <div class="p-4 p-md-5 opaco text-white rounded-4 shadow-lg backdrop-blur">
               <p class="mb-3 fs-5">
                 Me llamo Eva Díaz Pérez, tengo 20 años y actualmente estudio 2º de Iluminación y Sonido.
@@ -89,22 +90,25 @@ connect-src 'self';
       <!-- Grid visible solo en pantallas medianas o mayores -->
       <div class="container d-none d-lg-block">
         <div class="row text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="zoom-in"
+               data-aos-delay="100">
             <img src="img/escena.jpg" class="img-fluid rounded-4 shadow img-hover"
               style="width: 350px; height: 400px; object-fit: cover;">
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="zoom-in"
+               data-aos-delay="200">
             <img src="img/escena2.jpg" class="img-fluid rounded-4 shadow img-hover"
               style="width: 350px; height: 400px; object-fit: cover;">
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="zoom-in"
+               data-aos-delay="300">
             <img src="img/escena3.jpg" class="img-fluid rounded-4 shadow img-hover"
               style="width: 350px; height: 400px; object-fit: cover;">
           </div>
         </div>
       </div>
       <!-- Carrusel visible solo en pantallas pequeñas -->
-      <div id="carouselFotos" class="carousel slide d-lg-none" data-bs-ride="carousel">
+      <div id="carouselFotos" class="carousel slide d-lg-none" data-bs-ride="carousel" data-aos="fade-up">
         <div class="carousel-inner">
 
           <div class="carousel-item active">
@@ -138,21 +142,22 @@ connect-src 'self';
 
 
       <!-- TÍTULO -->
-      <div class="text-center mb-5">
+      <div class="text-center mb-5" data-aos="fade-up">
         <h2 class="text-white mb-2 display-6 fw-semibold">Instagram</h2>
 
-        <div class="d-flex justify-content-center mb-3">
+        <div class="d-flex justify-content-center mb-3" data-aos="zoom-in" data-aos-delay="200">
           <div style="width:80px; height:4px; background:white; border-radius:20px;"></div>
         </div>
 
-        <p class="text-light fst-italic opacity-75">
+        <p class="text-light fst-italic opacity-75" data-aos="fade-up"
+           data-aos-delay="300">
           Mis proyectos, sesiones y momentos detrás de la cámara
         </p>
       </div>
 
       <div class="row align-items-center g-5">
         <!-- TEXTO + BOTÓN -->
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-right">
           <div class="p-4 p-md-5  opaco text-white rounded-4 shadow-lg backdrop-blur">
 
             <p class="fs-5">
@@ -174,7 +179,8 @@ connect-src 'self';
           </div>
         </div>
         <!-- IMAGEN / PREVIEW (tu captura de pantalla) -->
-        <div class="col-lg-6 text-center mt-3">
+        <div class="col-lg-6 text-center mt-3"  data-aos="fade-left"
+             data-aos-delay="200">
           <img src="img/sobremi-insta.png" class="img-fluid rounded-4 shadow-lg img-hover" width="100%">
         </div>
 
@@ -235,6 +241,9 @@ connect-src 'self';
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+
 
 </body>
 
