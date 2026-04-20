@@ -6,11 +6,11 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="Content-Security-Policy" content="
+<meta http-equiv="Content-Security-Policy" content="
 default-src 'self';
 img-src 'self' data: https:;
-script-src 'self' https://cdn.jsdelivr.net;
-style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+script-src 'self' https://cdn.jsdelivr.net https://unpkg.com;
+style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com https://unpkg.com;
 font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net;
 connect-src 'self';
 ">
@@ -22,7 +22,7 @@ connect-src 'self';
   <link rel="icon" href="img/logo.jpg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-
+ <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 
 
@@ -34,11 +34,11 @@ connect-src 'self';
   <main class="container">
     <section class="">
 
-      <h1 class="text-center py-5 fw-bold" style="letter-spacing: 2px;">
+      <h1 class="text-center py-5 fw-bold" style="letter-spacing: 2px;" data-aos="fade-up">
         Fragmentos de Luz
       </h1>
 
-      <p class="lead text-center mx-auto" class="p-fragmentos">
+      <p class="lead text-center mx-auto" class="p-fragmentos" data-aos="fade-up"  data-aos-delay="200">
         <span style="font-weight: 600;">Fragmentos de Luz</span> es un proyecto fotográfico que nace del deseo de
         explorar
         distintas técnicas, estilos y emociones dentro de una misma obra. Cada imagen es un relato propio, un instante
@@ -49,7 +49,7 @@ connect-src 'self';
 
       <div class="container my-5 py-2">
         <div class="row justify-content-center align-items-center ">
-          <div class="col-12 col-md-6 col-xl-4 my-3">
+          <div class="col-12 col-md-6 col-xl-4 my-3" data-aos="fade-up" data-aos-delay="100">
             <div class="position-relative">
               <img src="img/invicto/Invicto1.jpg" class="img-fluid foto1 shadow" alt="invicto" />
               <div class="overlay2 position-absolute p-3">
@@ -62,7 +62,7 @@ connect-src 'self';
 
 
           </div>
-          <div class="col-12 col-md-6 col-xl-4 my-3">
+          <div class="col-12 col-md-6 col-xl-4 my-3" data-aos="fade-up" data-aos-delay="200">
             <div class="position-relative">
               <img src="img/marea/Marea2.jpg" class="img-fluid foto1 shadow" alt="marea viva" />
               <div class="overlay2 position-absolute p-3">
@@ -75,7 +75,7 @@ connect-src 'self';
 
 
           </div>
-          <div class="col-12 col-md-6 col-xl-4 my-3">
+          <div class="col-12 col-md-6 col-xl-4 my-3" data-aos="fade-up" data-aos-delay="300">
             <div class="position-relative">
               <img src="img/inestable/inestable5.jpg" class="img-fluid foto1 shadow" alt="inestable" />
               <div class="overlay2 position-absolute p-3">
@@ -88,7 +88,7 @@ connect-src 'self';
 
 
           </div>
-          <div class="col-12 col-md-6 col-xl-4 my-3">
+          <div class="col-12 col-md-6 col-xl-4 my-3" data-aos="fade-up" data-aos-delay="100">
             <div class="position-relative">
               <img src="img/mario/Mario3.jpg" class="img-fluid foto1 shadow" alt="bajo la neblina" />
               <div class="overlay2 position-absolute p-3">
@@ -134,6 +134,9 @@ connect-src 'self';
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+
 
 </body>
 
