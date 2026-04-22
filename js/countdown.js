@@ -1,15 +1,21 @@
-
-
-      document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
     const fechaObjetivo = new Date("2026-04-24T20:00:00").getTime();
+    const overlay = document.getElementById("overlay");
+    const countdown = document.getElementById("countdown");
+
+    const ahora = new Date().getTime();
+
+    if (ahora >= fechaObjetivo) {
+        overlay.style.display = "none";
+        return;
+    } else {
+        overlay.style.display = "block"; // 🔥 CLAVE
+    }
 
     function actualizarContador() {
         const ahora = new Date().getTime();
         const diferencia = fechaObjetivo - ahora;
-
-        const overlay = document.getElementById("overlay");
-        const countdown = document.getElementById("countdown");
 
         if (diferencia <= 0) {
             overlay.style.opacity = "0";
@@ -34,4 +40,3 @@
     actualizarContador();
 
 });
-   
