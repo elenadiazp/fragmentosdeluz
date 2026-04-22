@@ -2,7 +2,7 @@
 
       document.addEventListener("DOMContentLoaded", () => {
 
-    const fechaObjetivo = new Date("2026-04-24T20:00:00").getTime();
+    const fechaObjetivo = new Date("2026-04-22T18:00:00").getTime();
 
     function actualizarContador() {
         const ahora = new Date().getTime();

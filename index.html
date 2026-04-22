@@ -9,8 +9,8 @@
     <meta http-equiv="Content-Security-Policy" content="
 default-src 'self';
 img-src 'self' data: https:;
-script-src 'self' https://cdn.jsdelivr.net;
-style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+script-src 'self' https://cdn.jsdelivr.net https://unpkg.com;
+style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com https://unpkg.com;
 font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net;
 connect-src 'self';
 ">
@@ -20,10 +20,11 @@ connect-src 'self';
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body id="top" class="fondo">
-    <div id="overlay" class="position-fixed top-0 start-0 w-100 h-100" style="z-index:9999;">
+   <div id="overlay" class="position-fixed top-0 start-0 w-100 h-100" style="z-index:9999;">
 
         <!-- 🎥 VIDEO DE FONDO -->
         <section class="hero-video position-relative w-100 h-100" style="overflow: hidden;">
@@ -42,15 +43,15 @@ connect-src 'self';
             <div
                 class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white px-3">
 
-                <h1 class="display-3 mb-3">Fragmentos de Luz</h1>
-                <p class="lead">Exposición fotográfica</p>
-                 <p class="lead">Sala de Exposiciones del Ayuntamiento de Los Yébenes (Sala superior de la Casa de la Cultura)</p>
+                <h1 class="display-3 mb-3" data-aos="fade-down">Fragmentos de Luz</h1>
+                <p class="lead" data-aos="fade-up" data-aos-delay="100">Exposición fotográfica</p>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">Sala de Exposiciones del Ayuntamiento de Los Yébenes (Sala superior de la Casa de la Cultura)</p>
 
-                <h2 class="mt-4">Próximamente</h2>
+                <h2 class="mt-4" data-aos="zoom-in" data-aos-delay="300">Próximamente</h2>
 
-                <div id="countdown" style="font-size:50px; color:#fff; text-shadow: 0 0 10px black;"></div>
+                <div id="countdown" style="font-size:50px; color:#fff; text-shadow: 0 0 10px black;" data-aos="zoom-in" data-aos-delay="400"></div>
 
-                <p class="mt-4">Se abrirá automáticamente</p>
+                <p class="mt-4" data-aos="fade-up" data-aos-delay="500">Se abrirá automáticamente</p>
 
             </div>
 
@@ -61,32 +62,24 @@ connect-src 'self';
     <main>
         <section class="hero-video position-relative w-100" style=" overflow: hidden;">
 
-
-            <!-- 🎥 Video responsivo con 2 calidades -->
             <video class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover" autoplay muted loop playsinline>
 
-                <!-- Versión móvil (baja calidad) -->
                 <source src="img/ondabrillo.mp4" type="video/mp4" media="(max-width: 768px)">
-
-                <!-- Versión PC (alta calidad) -->
                 <source src="img/ondabrillo-pc.mp4" type="video/mp4" media="(min-width: 769px)">
 
             </video>
 
-
-            <!-- 🌑 Overlay opcional -->
             <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.35);">
             </div>
 
-            <!-- 📝 Contenido encima del video -->
             <div class="position-relative z-1 text-center text-light d-flex flex-column 
                 justify-content-center align-items-center h-100">
-                <h1 class="fw-bold display-4" style="font-family: 'Poppins', sans-serif;">
+                <h1 class="fw-bold display-4" style="font-family: 'Poppins', sans-serif;" data-aos="fade-down">
                     Fragmentos de Luz
                 </h1>
-                <p class="lead">Iluminando ideas, creando experiencias</p>
+                <p class="lead" data-aos="fade-up" data-aos-delay="100">Iluminando ideas, creando experiencias</p>
 
-                <div class="scroll-down text-center  mt-4">
+                <div class="scroll-down text-center  mt-4" data-aos="fade-up" data-aos-delay="200">
                     <a href="#proyecto">
                         <i class="bi bi-chevron-double-down fs-1 text-light  scroll-icon"></i></a>
                 </div>
@@ -94,7 +87,6 @@ connect-src 'self';
                 <style>
                     .scroll-icon {
                         display: inline-block;
-                        /* NECESARIO para animación */
                         animation: bounce 1.5s infinite ease-in-out;
                     }
 
@@ -113,22 +105,20 @@ connect-src 'self';
                     }
                 </style>
 
-
             </div>
 
         </section>
+
         <section id="proyecto" class="container my-5 py-5">
 
             <div class="row align-items-center justify-content-center g-5">
 
-                <!-- 📘 Imagen / Portada -->
-                <div class="col-12 col-md-6 text-center">
+                <div class="col-12 col-md-6 text-center" data-aos="fade-right">
                     <img src="img/cartel.jpg" alt="Portada del proyecto"
                         class="img-fluid cartel rounded-4 shadow-lg img-hover">
                 </div>
 
-                <!-- 📝 Texto del proyecto -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="100">
                     <h2 class="fw-bold mb-3 text-center text-md-start" style="font-family: 'Poppins', sans-serif;">
                         Fragmentos de luz
                     </h2>
@@ -149,7 +139,7 @@ connect-src 'self';
         </section>
 
         <section class="container mb-5">
-            <div class="row justify-content-center shadow rounded-5 overflow-hidden">
+            <div class="row justify-content-center shadow rounded-5 overflow-hidden" data-aos="zoom-in">
                 <div class="col-12 position-relative text-center p-0">
 
                     <picture class="d-block w-100">
@@ -158,12 +148,10 @@ connect-src 'self';
                         <img src="img/cristal.jpg" alt="cristal" class="img-fluid w-100 rounded-5">
                     </picture>
 
-                    <!-- Overlay -->
                     <div class="overlay position-absolute top-0 start-0 h-100 w-100 rounded-5"></div>
 
-                    <!-- Texto centrado responsivo -->
-                    <div
-                        class="hero-text position-absolute top-50 start-50 translate-middle text-white text-center px-3">
+                    <div class="hero-text position-absolute top-50 start-50 translate-middle text-white text-center px-3"
+                        data-aos="fade-up" data-aos-delay="100">
                         <h1 class="fw-bold">¿Quieres saber quien soy?</h1>
                         <p class="lead">Descubre quién soy y cómo puedo ayudarte a dar vida a tus proyectos.</p>
                         <a href="sobremi.html" class="btn-2  shadow">Saber más →</a>
@@ -177,8 +165,7 @@ connect-src 'self';
 
             <div class="row align-items-center justify-content-center g-5">
 
-
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6" data-aos="fade-right">
                     <h2 class="fw-bold mb-3 text-center text-md-start" style="font-family: 'Poppins', sans-serif;">
                         Susurro del cielo
                     </h2>
@@ -192,7 +179,7 @@ connect-src 'self';
                         Ver Proyecto →
                     </a>
                 </div>
-                <div class="col-12 col-md-6 text-center">
+                <div class="col-12 col-md-6 text-center" data-aos="fade-left" data-aos-delay="100">
                     <img src="img/angel/angel1.jpeg" alt="Portada del proyecto"
                         class="img-fluid angel rounded-4 shadow-lg img-hover">
                 </div>
@@ -220,7 +207,7 @@ connect-src 'self';
     </style>
     <div id="mensajeProtegido">Imagen protegida</div>
     <script src="js/script.js"></script>
-     <script src="js/countdown.js"></script>
+    <script src="js/countdown.js"></script>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -230,7 +217,8 @@ connect-src 'self';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
 
 </body>
 

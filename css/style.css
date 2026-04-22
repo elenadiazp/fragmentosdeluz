@@ -16,6 +16,7 @@ body {
 .overlay {
     background-color: #00000018;
     backdrop-filter: blur(3px);
+    
 }
 
 .btn-2 {
@@ -401,4 +402,5 @@ a {
 }
 #overlay {
   transition: opacity 1s ease;
+  display: none;
 }
